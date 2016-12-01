@@ -6,8 +6,9 @@ public class TestMatematicas{
 		Scanner in = new Scanner(System.in);
 		int numero = in.nextInt();
 		boolean par = Matematicas.esPar(numero);
-		boolean divisiblePorTres = Matematicas.esPar(numero);
-		boolean divisiblePorCinco = Matematicas.esPar(numero);
-		System.out.printf("El número %d ¿es par? %b%, ¿es divisible por  res? %b, ¿es divisible por 5? %b%n",numero,par, divisiblePorTres, divisiblePorCinco);
+		boolean divisiblePorTres = Matematicas.divisiblePorTres(numero);
+		boolean divisiblePorCinco = Matematicas.divisiblePorCinco(numero);
+		System.out.printf("El número %d ¿es par? %b%, ¿es divisible por  res? %b, ¿es divisible por 5? %b%n"
+		,numero,par, divisiblePorTres, divisiblePorCinco);
 	}
 }
